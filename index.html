@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let str="Indivisibilities";
+        //let str = "aabBcde";
+
+        console.log(outputNum(str.toLowerCase()));  // Не работает toLower
+
+        /**
+        * Выводит количество совпадений в массиве
+        */
+        function outputNum(str) {
+            let mas = [];
+            for (let i = 0; i < str.length; i++) {
+                if (mas.includes(str[i])) continue;
+                if (checkInclude(i, str[i], str)) {
+                    mas.push(str[i]);
+                }
+            }
+            return mas.length;
+        }
+
+        /**
+        * Проверяет совпадение символа с другими элементами массива
+        */
+        function checkInclude(num, sym, str) {
+            if (!checkValue(num, str)) return;
+            let mas=str.substring(num+1,str.length);
+            return mas.includes(sym);
+
+        }
+        /**
+        * Проверяет выход порядкового номера за границы массива
+        */
+        function checkValue(num, str) {
+            return (num >= 0 && num + 1 < str.length) ? true : false;
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

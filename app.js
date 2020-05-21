@@ -1,3 +1,4 @@
 'use strict';
-hgvghvhgvhgvhgvhvgh
-'My new text and check GitHub.';
+//hgvghvhgvhgvhgvhvgh
+console.log('My new text and check GitHub.');
+console.log("new");

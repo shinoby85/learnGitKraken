@@ -1,2 +1,3 @@
 'use strict';
-hgvghvhgvhgvhgvhvgh hgf hgf hgfjhgfghfhg
+hgvghvhgvhgvhgvhvgh
+'My new text and check GitHub.';
